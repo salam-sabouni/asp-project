@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*   {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+header a   {
+    text-decoration:none;
+}
+
+header {
+    padding: 0 20px;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px rgba(255, 56, 96, 0.3);
+}
+
+#brand {
+    font-weight:bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+    #brand a {
+        color: #ff3860;
+        text-transform: uppercase;
+    }
+
+ul  {
+    list-style:none;
+    height:100%;
+    display : flex;
+    align-items:center;
+    justify-content : space-around;
+
+}
+
+ul a  {
+    color:white;
+}
+
+ul li  {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.login  {
+    border-radius: 5px;
+    padding: 5px 8px;
+    border: 1px solid #ff3860;
+}
+    .login a {
+        color: #ff3860;
+    }
+
+
+
+.mydatagrid {
+    width: 600px;
+    border: solid 2px black;
+    min-width: 100%;
+    box-shadow: 0 0 50px rgba(255, 56, 96, 0.7);
+}
+
+.header {
+    background-color: white;
+    font-family: Arial;
+    color: red;
+    border: none 0px transparent;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rows {
+    background-color: #fff;
+    font-family: Arial;
+    font-size: 14px;
+    color: black;
+    min-height: 70px;
+    text-align: center;
+    border: none 0px transparent;
+}
+
+    .rows:hover {
+        background-color: #ff0000;
+        font-family: Arial;
+        color: #fff;
+        text-align: center;
+        border: none 0px transparent;
+    }
+
+#datagrid .selectedRowStyle {
+    background-color: #ff0000;
+    font-family: Arial;
+    color: #fff;
+    text-align: center;
+    border: none 0px transparent;
+}
+
+.mydatagrid a /** FOR THE PAGING ICONS **/ {
+    background-color: Transparent;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+    .mydatagrid a:hover /** FOR THE PAGING ICONS HOVER STYLES**/ {
+        background-color: #000;
+        color: #fff;
+    }
+
+.mydatagrid span /** FOR THE PAGING ICONS CURRENT PAGE INDICATOR **/ {
+    background-color: #c9c9c9;
+    color: #000;
+    padding: 10px 10px 10px 10px;
+}
+
+.pager {
+    background-color: #646464;
+    font-family: Arial;
+    color: White;
+    height: 60px;
+    text-align: left;
+    text-align: center;
+}
+
+.mydatagrid td {
+    padding: 10px;
+}
+
+.mydatagrid th {
+    padding: 10px;
+}
+.table {
+    margin: 60px auto;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    
+}
+.alertmsg {
+    width:500px;
+    height:500px;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+#overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    
+    background: #000;
+    opacity: 0.5;
+}
+.typebtn{
+    display:flex;
+    justify-content:space-between;
+    margin: 30px 40%;
+}
+    .typebtn input {
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        width: 200px;
+        background-color: transparent;
+        color: white;
+    }
+        .typebtn input:hover {
+            background-color: white;
+            color: black;
+        }
+#search{
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+    #search #boxes input {
+        background-color: transparent;
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        width: 200px;
+        padding: 5px 1px;
+        border: 0;
+        border-bottom: 1px solid white;
+        outline: none;
+        -webkit-transition: all .2s;
+        transition: all .2s;
+        text-align: center;
+        margin: 10px;
+        color:white;
+    }
+
+        #search #boxes input:focus {
+            border-color: #ff0000;
+        }
+.frontimg {
+   flex-basis:30%;
+}
+.cont{
+    margin : 100px 0;
+    display:flex;
+    justify-content:center;
+}
+.side{
+ flex-basis:30%;
+ display :flex;
+ justify-content:center;
+ flex-direction:column;
+}
+.side h2{
+    text-align:center;
+}
+.homebtn{
+    width: 200px;
+    height:25px;
+    border : 1px solid white;
+    background-color:transparent;
+    outline:none;
+    color:white;
+    align-self:center;
+    margin: 20px 0;
+}
+.homebtn:hover{
+    color:black;
+    background-color:white;
+}
+.lbl1{
+    margin : 50px 0;
+}
